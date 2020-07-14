@@ -1,0 +1,56 @@
+/* -----------------------------------------------------------------GENERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ffdcb4;
+    
+}
+
+/*-------------------------------------------------------------------HEADER   */
+.main-heading{
+    font-family:'Fugaz one', cursive;
+    text-align: center;
+    color: #00005c;
+    text-shadow: 2px 2px #6A097D;
+    letter-spacing: 2px;
+    font-size: 3rem;
+}
+
+.icons-container{
+width: 20%;
+margin: auto;
+}
+.icons{
+    width: 30%;
+    display: flex;
+    font-size: 1.5rem; 
+}
+
+.fa-volume-up{
+    margin-left: 200px;
+}
+.fa-volume-mute{
+    display: none;
+}
+
+.sub-headings h2{
+    font-family: 'Fugaz one', cursive;
+    width: 25%;
+    float: left;
+    font-size: 1.7rem;
+    font-weight: lighter;
+    color: #6A097D;
+}
+
+.sub-headings span{
+    color: #C060A1;
+}
+
+
+.container{
+    width: 40%;
+    margin: auto;
+}
