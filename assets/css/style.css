@@ -51,6 +51,36 @@ margin: auto;
 
 
 .container{
-    width: 40%;
-    margin: auto;
+    width: 600px;
+    margin: auto;  
+} 
+
+#deck-of-cards-container{
+    width: 550px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card{
+    background-color: blue;
+    height: 125px;
+    width: 125px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+#new-game-button{
+    font-family: 'Fugaz one', cursive;
+    font-size: 1.5rem;
+    width: 550px;
+    margin-top: 15px;
+    color: white;
+    background-color: #00005c;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    /* font-weight: normal; */
 }
