@@ -5,7 +5,9 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #ffdcb4;
+     background-color: rgba(180, 242, 225, 0.377);
+   
+  
     
 }
 
@@ -13,8 +15,8 @@ body{
 .main-heading{
     font-family:'Fugaz one', cursive;
     text-align: center;
-    color: #00005c;
-    text-shadow: 2px 2px #6A097D;
+    color: #EB6383;
+    text-shadow: 2px 2px #FA9191;
     letter-spacing: 2px;
     font-size: 3rem;
 }
@@ -42,11 +44,11 @@ margin: auto;
     float: left;
     font-size: 1.7rem;
     font-weight: lighter;
-    color: #6A097D;
+    color: #EB6383;
 }
 
 .sub-headings span{
-    color: #C060A1;
+    color: blue;
 }
 
 
@@ -63,13 +65,39 @@ margin: auto;
 }
 
 .card{
-    background-color: blue;
+    background-color: white;
     height: 125px;
     width: 125px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+   
+  
+    border: 1px solid #EB6383;   
+}
+
+
+.front-of-card{
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    transform: rotateY(0deg);
+    transition: 0.5s linear 0s;
+    backface-visibility: hidden;
+    background-image: url("../images/pngitem_worldmap-square.png");
+    background-size: cover;
+}
+
+.back-of-card{
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    transform: rotateY(180deg);
+    transition: 0.5s linear 0s;
+    backface-visibility: hidden; 
 }
 
 #new-game-button{
@@ -78,9 +106,16 @@ margin: auto;
     width: 550px;
     margin-top: 15px;
     color: white;
-    background-color: #00005c;
+    background-color: #EB6383;
     border: none;
     border-radius: 5px;
     padding: 5px;
+    box-shadow: 5px 5px 25px #FA9191;
     /* font-weight: normal; */
+}
+
+#new-game-button:hover{
+    background-color: rgba(206, 18, 62, 0.664);
+    cursor: pointer;
+    box-shadow: 5px 5px 7px #FA9191;
 }
