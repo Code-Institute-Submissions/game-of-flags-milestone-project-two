@@ -5,12 +5,13 @@
     box-sizing: border-box;
 }
 body{
-     background-color: rgba(180, 242, 225, 0.377);
-   
-  
-    
+     background-color: rgba(180, 242, 225, 0.377);   
 }
 
+.container{
+    width: 600px;
+    margin: auto;
+}
 /*-------------------------------------------------------------------HEADER   */
 .main-heading{
     font-family:'Fugaz one', cursive;
@@ -51,11 +52,7 @@ margin: auto;
     color: blue;
 }
 
-
-.container{
-    width: 600px;
-    margin: auto;  
-} 
+/* -----------Deck of cards section containing style for cards and New Game button */
 
 #deck-of-cards-container{
     width: 550px; 
@@ -74,16 +71,33 @@ margin: auto;
     margin-top: 15px;
     border-radius: 5px;
     cursor: pointer;
-   
-  
+    position: relative;
     border: 1px solid #EB6383;   
 }
 
+.flip-card{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    text-align: center;
+}
+/* Testing the flipping with CSS but it will later be done with Javascript */
+.card:hover .flip-card{
+    transform: rotateY(180deg);
+}
 
-.front-of-card{
+
+.front-of-card, .back-of-card{
     position: absolute;
     width: 125px;
     height: 125px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.front-of-card{
     transform: rotateY(0deg);
     transition: 0.5s linear 0s;
     backface-visibility: hidden;
@@ -92,12 +106,8 @@ margin: auto;
 }
 
 .back-of-card{
-    position: absolute;
-    width: 125px;
-    height: 125px;
     transform: rotateY(180deg);
     transition: 0.5s linear 0s;
-    backface-visibility: hidden; 
 }
 
 #new-game-button{
