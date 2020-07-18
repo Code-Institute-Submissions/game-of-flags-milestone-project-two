@@ -5,7 +5,8 @@
     box-sizing: border-box;
 }
 body{
-     background-color: rgba(180, 242, 225, 0.377);   
+     background-color: rgba(180, 242, 225, 0.377);
+     font-family: 'Roboto', sans-serif;   
 }
 
 .container{
@@ -83,6 +84,7 @@ margin: auto;
     transform-style: preserve-3d;
     text-align: center;
 }
+
 /* Testing the flipping with CSS but it will later be done with Javascript */
 .card:hover .flip-card{
     transform: rotateY(180deg);
@@ -91,8 +93,8 @@ margin: auto;
 
 .front-of-card, .back-of-card{
     position: absolute;
-    width: 125px;
-    height: 125px;
+    width: 122px;
+    height: 122px;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
@@ -114,18 +116,36 @@ margin: auto;
     font-family: 'Fugaz one', cursive;
     font-size: 1.5rem;
     width: 550px;
-    margin-top: 15px;
+    margin-top: 1rem;
     color: white;
     background-color: #EB6383;
     border: none;
     border-radius: 5px;
     padding: 5px;
-    box-shadow: 5px 5px 25px #FA9191;
-    /* font-weight: normal; */
 }
 
 #new-game-button:hover{
     background-color: rgba(206, 18, 62, 0.664);
     cursor: pointer;
     box-shadow: 5px 5px 7px #FA9191;
+}
+
+/* -------------------------------------------------------Footer Section */
+
+.footer-text{
+    font-size: 1.5rem;
+    color: orange;
+    text-align: center;
+    margin-top: 1rem;
+    text-shadow: 1px 1px 2px brown;
+}
+
+footer a{
+    text-decoration: none;
+    color: #511845;
+}
+
+footer a:hover{
+    color: #900c3f;
+    transition-duration: 1s;
 }
