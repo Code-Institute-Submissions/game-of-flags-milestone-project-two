@@ -34,14 +34,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="container">
-			<div class="sub-headings">
-				<h2>Time: <span class="time-left">60</span></h2>
-				<h2>Flips: <span class="flips-made">00</span></h2>
-				<h2>Score: <span class="matches-made">00</span></h2>
-				<h2>Level: <span class="current-level">1</span></h2>
-			</div>
-		</div>
+		
 	</header>
 	<!-- Intro-section is the main start screen of the game -->
 	<section id="intro-section">
@@ -61,6 +54,12 @@
 
 	<!-- Deck of cards section containing cards and  New Game button. Cards will be added dynamically with Javascript. At this stage I have added the cards with html for development purpose -->
 	<section id="deck-of-cards" class="container">
+		<div class="sub-headings">
+			<h2>Time: <span class="time-left">60</span></h2>
+			<h2>Flips: <span class="flips-made">00</span></h2>
+			<h2>Score: <span class="matches-made">00</span></h2>
+			<h2>Level: <span class="current-level">1</span></h2>
+		</div>
 		<div id="deck-of-cards-container">
 			<div class="card">
 				<div class="flip-card">
@@ -215,19 +214,19 @@
 			<div id="result-section-popup">
 				<div id="result-section-popup-body">
 					<div id="result-for-success"><img class="result-gif" src="https://i.gifer.com/YARz.gif" alt="thumbs-up gif" >
-						<h1 id="result-success-heading" class="result-heading-text">Congratulations!</h1>
+						<h2 id="result-success-heading" class="result-heading-text">Congratulations!</h2>
 						<p class="result-text">You won! You can now advance to the next level by clicking on the "Play"
 							button bellow.</p>
 					</div>
 					<div id="result-for-final-success"><img class="result-gif" src="https://i.gifer.com/YARz.gif" alt="thumb-up gif" >
-						<h1 class="result-heading-text">Congratulations!</h1>
+						<h2 class="result-heading-text">Congratulations!</h2>
 						<p class="result-text">Game completed! You can click on "Play Again" button to start a new game.
 						</p>
 					</div>
 
 					<div id="result-for-failure">
 						<img class="result-gif" src="https://i.gifer.com/3vIQ.gif" alt="thumb-down gif">
-						<h1 class="result-heading-text">You Lose!</h1>
+						<h2 class="result-heading-text">You Lose!</h2>
 						<p class="result-text">You can click on "Try Again" button bellow to start a new game</p>
 					</div>
 				</div>
