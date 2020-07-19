@@ -99,7 +99,7 @@ body{
     transform: rotateY(0deg);
     transition: 0.5s linear 0s;
     backface-visibility: hidden;
-    background-image: url("../images/pngitem_worldmap-square.png");
+    background-image: url("../images/front-of-card-image.png");
     background-size: cover;
 }
 
@@ -129,10 +129,10 @@ body{
 
 /* -------------------------------------------------------Result Section */
 
-.result-section-overlay, 
+/* .result-section-overlay, 
 #result-section-popup{
     display: none;
-}
+} */
 
 .result-section-overlay{
     position: fixed;
@@ -148,12 +148,96 @@ body{
     position: fixed;
     top: 160px;
     width: 600px;
-    height: 400px;
-    border: 2px solid white;
+    height: 350px;
+    /* border: 1px solid #EB6383; */
     border-radius: 5px;
     z-index: 200;
 }
 
+#result-section-popup-body{
+    height: 250px;
+    background-color: white;
+    border-style: solid;
+    border-width: 2px 2px 0px 2px;
+    border-color: #EB6383;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.result-heading-text{
+    font-family: 'Fugaz one', cursive;
+    font-size: 2rem;
+    color: #EB6383;
+    text-align: center;
+}
+
+.result-text{
+    font-weight: bold;
+    text-align: center;
+}
+
+.result-section-popup-footer{
+    height: 100px;
+    background-color: rgb(180, 242, 225);
+    padding: 15px;
+    border-style: solid;
+    border-width: 0px 2px 2px 2px;
+    border-color: #EB6383;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+ 
+ 
+#result-for-success{
+    display: none;
+} 
+
+#play-next-level-button{
+    display: none;
+}
+
+#result-for-final-success{
+    display: none;
+}
+
+#play-again-button{
+    display: none;
+}
+
+/* #result-for-failure{
+    display: none;
+}
+
+#try-again-button{
+    display: none;
+} */
+
+/* -----Result Section Gifs copied from gifer.com */
+
+.result-gif{
+    width: 25%;
+    height: 25%;
+    
+   
+}
+
+#result-section-popup-body img{
+    margin-left: 37%; 
+    margin-top: 1%; 
+}
+
+#result-for-failure img{
+    margin-top: 5%;
+}
+
+
+
+
+.result-section-button{
+    width: 150px;
+    /* height: 50px; */
+    margin: 0 auto;
+}
 /* -------------------------------------------------------Footer Section */
 
 .footer-text{

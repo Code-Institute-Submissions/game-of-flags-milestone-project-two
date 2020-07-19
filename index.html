@@ -199,14 +199,26 @@
 		<div class="container">
 			<div id="result-section-popup">
 				<div id="result-section-popup-body">
-					<h1 id="result-success-heading">Congratulations!</h1>
-					<h1 id="result-failure-heading">You Lose!</h1>
-					<p id="result">You won and you can advance to the next level!</p>
+					<div id="result-for-success"><img class="result-gif" src="https://i.gifer.com/YARz.gif" alt="thumbs-up gif" >
+						<h1 id="result-success-heading" class="result-heading-text">Congratulations!</h1>
+						<p class="result-text">You won! You can now  advance to the next level by clicking on the "Play" button bellow.</p>
+					</div>
+                    <div id="result-for-final-success"><img class="result-gif" src="https://i.gifer.com/YARz.gif" alt="thumb-up gif" >
+						<h1 class="result-heading-text">Congratulations!</h1>
+						<p class="result-text">Game completed! You can click on "Play Again" button to start a new game.</p>
+					</div>
+                    
+                    <div id="result-for-failure">
+                    <img class="result-gif" src="https://i.gifer.com/3vIQ.gif" alt="thumb-down gif">
+                    <h1 class="result-heading-text">You Lose!</h1>
+                    <p class="result-text">You can click on "Try Again" button bellow to start a new game</p>
+                    </div>
 				</div>
 				<div class="result-section-popup-footer">
 					<div class="result-section-button">
-						<button id="play-next-level">Play</button>
-						<button class="new-game-button">Try Again</button>
+						<button id="play-next-level-button" class="new-game-button">Play</button>
+						<button id="play-again-button" class="new-game-button">Play Again</button>
+                        <button id="try-again-button" class="new-game-button">Try Again</button>
 					</div>
 				</div>
 			</div>
