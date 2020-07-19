@@ -43,8 +43,23 @@
 			</div>
 		</div>
 	</header>
+	<!-- Intro-section is the main start screen of the game -->
+	<section id="intro-section">
+		<div class="intro-section-overlay">
+			<h2 class="main-heading">GAME OF FLAGS</h2>
+			<div class="intro-background-image">
+				<img src="assets/images/intro-section-overlay-background-image.png" alt=""></div>
+				<div class="intro-section-popup">
 
-	<!-- Deck of cards section containing cards and  New Game button -->
+					<p class="intro-section-text">Match two cards consecutively to win. Click on "Play" to begin the
+						journey of concentration!</p>
+					<div class="intro-section-play-button"><button class="new-game-button">Play</button></div>
+				</div>
+			</div>
+
+	</section>
+
+	<!-- Deck of cards section containing cards and  New Game button. Cards will be added dynamically with Javascript. At this stage I have added the cards with html for development purpose -->
 	<section id="deck-of-cards" class="container">
 		<div id="deck-of-cards-container">
 			<div class="card">
@@ -201,24 +216,26 @@
 				<div id="result-section-popup-body">
 					<div id="result-for-success"><img class="result-gif" src="https://i.gifer.com/YARz.gif" alt="thumbs-up gif" >
 						<h1 id="result-success-heading" class="result-heading-text">Congratulations!</h1>
-						<p class="result-text">You won! You can now  advance to the next level by clicking on the "Play" button bellow.</p>
+						<p class="result-text">You won! You can now advance to the next level by clicking on the "Play"
+							button bellow.</p>
 					</div>
-                    <div id="result-for-final-success"><img class="result-gif" src="https://i.gifer.com/YARz.gif" alt="thumb-up gif" >
+					<div id="result-for-final-success"><img class="result-gif" src="https://i.gifer.com/YARz.gif" alt="thumb-up gif" >
 						<h1 class="result-heading-text">Congratulations!</h1>
-						<p class="result-text">Game completed! You can click on "Play Again" button to start a new game.</p>
+						<p class="result-text">Game completed! You can click on "Play Again" button to start a new game.
+						</p>
 					</div>
-                    
-                    <div id="result-for-failure">
-                    <img class="result-gif" src="https://i.gifer.com/3vIQ.gif" alt="thumb-down gif">
-                    <h1 class="result-heading-text">You Lose!</h1>
-                    <p class="result-text">You can click on "Try Again" button bellow to start a new game</p>
-                    </div>
+
+					<div id="result-for-failure">
+						<img class="result-gif" src="https://i.gifer.com/3vIQ.gif" alt="thumb-down gif">
+						<h1 class="result-heading-text">You Lose!</h1>
+						<p class="result-text">You can click on "Try Again" button bellow to start a new game</p>
+					</div>
 				</div>
 				<div class="result-section-popup-footer">
 					<div class="result-section-button">
 						<button id="play-next-level-button" class="new-game-button">Play</button>
 						<button id="play-again-button" class="new-game-button">Play Again</button>
-                        <button id="try-again-button" class="new-game-button">Try Again</button>
+						<button id="try-again-button" class="new-game-button">Try Again</button>
 					</div>
 				</div>
 			</div>
