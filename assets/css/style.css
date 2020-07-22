@@ -171,11 +171,11 @@ body{
 
 /* -------------------------------------------------------Result Section */
 
-.result-section-overlay, 
-#result-section-popup{
+#result-section{
     display: none;
-} 
+}
 
+.game-info-section-overlay,
 .result-section-overlay{
     position: fixed;
     top: 0;
@@ -281,6 +281,23 @@ body{
 
     margin: 0 auto;
 }
+
+/* -----------------------------------------------------Game-info Section */
+
+#game-info-section{
+    display: none;
+}
+
+.game-info-container{
+    width: 400px;
+    height: 70%;
+    background-color: white;
+    margin: 6rem auto;
+    border: 2px solid #900c3f;
+    border-radius: 5px;
+}
+
+
 /* -------------------------------------------------------Footer Section */
 
 .footer-text{
