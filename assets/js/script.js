@@ -35,6 +35,24 @@ let gameLevel = 1; // start game from level 1
 let currentLevel = gameLevel; //will increment as game level changes
 let gameOver = false; 
 
+// ------------------------------- Variables retrieve from HTML elements
+
+let gameArea = $("#deck-of-cards-container");
+let time = $(".time-left");
+let scoreRecord = $(".matches-made");
+let flipsRecord = $(".flips-made");
+let levelRecord = $(".current-level");
+let victoryResult = $("#result-for-success");
+let finalVictoryResult = $("result-for final success");
+let faillureResult = $("#result-for-faillure");
+
+
+// Testing
+$(".new-game-button").click( ()=> {
+    bgSound.play();
+    $("#intro-section").addClass("intro-section");
+});
+
 
 
 
