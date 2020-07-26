@@ -128,8 +128,13 @@ body{
 
 /* Testing the flipping with CSS but it will later be done with Javascript */
 
-.card:hover .flip-card{
+/* .card:hover .flip-card{
     transform: rotateY(180deg);
+} */
+
+.flipCard180{
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
 }
 
 .front-of-card, .back-of-card{

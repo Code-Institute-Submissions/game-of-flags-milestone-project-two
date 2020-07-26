@@ -51,8 +51,25 @@ let faillureResult = $("#result-for-faillure");
 $(".new-game-button").click( ()=> {
     bgSound.play();
     $("#intro-section").fadeOut();
+    createCards();
 });
 
+// Create cards dynamically
+function createCards() {
+    for(let i=0; i<16; i++){
+        let card = "<div class='card'><div class='flip-card' id='card"+i+"' onclick='selectCard("+i+")'><div class='front-of-card'></div><div class='back-of-card'></div></div></div>";
+        gameArea.append(card);
+    }
+}
+
+// Make the flipping work
+function selectCard(id){
+    let cardId = `#card${id}`;
+    if(!$(cardId).hasClass('flipCard180')){
+        $(cardId).addClass('flipCard180');
+        flipSound.play();
+    }
+}
 
 
 
