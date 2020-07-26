@@ -50,7 +50,7 @@ let faillureResult = $("#result-for-faillure");
 // Testing
 $(".new-game-button").click( ()=> {
     bgSound.play();
-    $("#intro-section").addClass("intro-section");
+    $("#intro-section").fadeOut();
 });
 
 

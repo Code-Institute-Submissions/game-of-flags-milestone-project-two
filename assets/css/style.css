@@ -25,16 +25,6 @@ body{
     margin-top: 2rem;
 }
 
-.icons{
-    display: flex;   
-    font-size: 1.5rem; 
-    justify-content: space-evenly;
-}
-
-.fa-volume-mute{
-    display: none;
-}
-
 .sub-headings h2{
     font-family: 'Fugaz one', cursive;
     width: 25%;
@@ -51,9 +41,9 @@ body{
 
 /* -------------------------------------------Intro Section */
 
-#intro-section{
+/* #intro-section{
     display: none;
-} 
+}  */
 
 .intro-section-overlay{
     width: 100%;
