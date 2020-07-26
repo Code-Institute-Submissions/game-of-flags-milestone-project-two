@@ -39,6 +39,23 @@ body{
     color: blue;
 }
 
+.mute-button, .unmute-button{
+    font-family: 'Fugaz one', cursive;
+    font-size: 1.2rem;
+     width: 80%; 
+    /* margin-top: 1rem; */
+    color: white;
+    background-color: #EB6383;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    outline: none;
+}
+
+.mute-button {
+    display: none;
+}
+
 /* -------------------------------------------Intro Section */
 
 /* #intro-section{
