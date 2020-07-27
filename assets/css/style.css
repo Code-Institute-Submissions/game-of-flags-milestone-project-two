@@ -156,6 +156,8 @@ body{
 .back-of-card{
     transform: rotateY(180deg);
     transition: 0.5s linear 0s;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .new-game-button{

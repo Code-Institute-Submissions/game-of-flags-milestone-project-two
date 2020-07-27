@@ -16,6 +16,9 @@ const closeGameInfoButton = $(".close-game-info-button");
 
 // ------------------------------------------ Variables
 
+let flags = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" ];
+
+
 let gameRecord = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]; //keep track of flip cards
 let imageRecord = []; //keep track of randomly loaded and yet to be loaded images
 let flipIndex; //keep track of the number of flipped cards
@@ -47,7 +50,7 @@ let finalVictoryResult = $("result-for final success");
 let faillureResult = $("#result-for-faillure");
 
 
-// Testing
+// Hide intro Overlay
 $(".new-game-button").click( ()=> {
     bgSound.play();
     $("#intro-section").fadeOut();
@@ -56,11 +59,15 @@ $(".new-game-button").click( ()=> {
 
 // Create cards dynamically
 function createCards() {
+
+    flags = shuffle(flags);
+
     for(let i=0; i<16; i++){
-        let card = "<div class='card'><div class='flip-card' id='card"+i+"' onclick='selectCard("+i+")'><div class='front-of-card'></div><div class='back-of-card'></div></div></div>";
+        let card = "<div class='card'><div class='flip-card' id='card"+i+"' onclick='selectCard("+i+")'><div class='front-of-card'></div><div class='back-of-card' style='background-image:url(assets/images/flag"+flags[i]+".png'></div></div></div>";
         gameArea.append(card);
     }
 }
+
 
 // Make the flipping work
 function selectCard(id){
@@ -71,6 +78,23 @@ function selectCard(id){
     }
 }
 
+// function to shuffle the flags copied from w3resource.com
+function shuffle(arra1) {
+    var ctr = arra1.length, temp, index;
+
+// While there are elements in the array
+    while (ctr > 0) {
+// Pick a random index
+        index = Math.floor(Math.random() * ctr);
+// Decrease ctr by 1
+        ctr--;
+// And swap the last element with it
+        temp = arra1[ctr];
+        arra1[ctr] = arra1[index];
+        arra1[index] = temp;
+    }
+    return arra1;
+}
 
 
 
