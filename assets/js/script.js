@@ -21,7 +21,10 @@ let flags = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "1", "2", "3", "
 
 let gameRecord = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]; //keep track of flip cards
 let imageRecord = []; //keep track of randomly loaded and yet to be loaded images
-let flipIndex; //keep track of the number of flipped cards
+let flipIndex = 0; //keep track of the number of flipped cards
+let firstFlippedCard;//keep track of the first flipped card
+let secondFlippedCard;// keep track of the second flipped card 
+let previousCard; // keep track of the previous flipped card
 let randomNumber; //will be used to randomly generate numbers
 let cardTextRecord = []; // store the string of images and check for comparison
 let cardRecord = []; //store the id of every 2 flipped cards
@@ -62,19 +65,41 @@ function createCards() {
 
     flags = shuffle(flags);
 
-    for(let i=0; i<16; i++){
-        let card = "<div class='card'><div class='flip-card' id='card"+i+"' onclick='selectCard("+i+")'><div class='front-of-card'></div><div class='back-of-card' style='background-image:url(assets/images/flag"+flags[i]+".png'></div></div></div>";
+    for(let i=0; i<20; i++){
+        let card = "<div class='card'><div class='flip-card' id='card"+i+"' onclick='selectCard("+i+","+flags[i]+")'><div class='front-of-card'></div><div class='back-of-card' style='background-image:url(assets/images/flag"+flags[i]+".png'></div></div></div>";
         gameArea.append(card);
     }
 }
 
 
-// Make the flipping work
-function selectCard(id){
+// Make the flipping work and compare for similarity
+function selectCard(id,current){
+    console.log(id, current);
     let cardId = `#card${id}`;
-    if(!$(cardId).hasClass('flipCard180')){
+    if(!$(cardId).hasClass('flipCard180') && flipIndex!=2){
         $(cardId).addClass('flipCard180');
         flipSound.play();
+
+        flipIndex++
+
+        if(flipIndex == 1){
+            firstFlippedCard = current;
+            previousCard = cardId;
+        }
+        if(flipIndex == 2){
+            secondFlippedCard=current;
+            if(firstFlippedCard == secondFlippedCard){
+                setTimeout(function(){
+                    flipIndex = 0;
+                }, 500)
+            }else{
+                setTimeout(function(){
+                    $(cardId).removeClass('flipCard180');
+                    $(previousCard).removeClass('flipCard180');
+                    flipIndex = 0;
+                }, 500)
+            }
+        }
     }
 }
 
