@@ -89,6 +89,7 @@ function selectCard(id,current){
         if(flipIndex == 2){
             secondFlippedCard=current;
             if(firstFlippedCard == secondFlippedCard){
+                matchSound.play();
                 setTimeout(function(){
                     flipIndex = 0;
                 }, 500)
@@ -121,6 +122,11 @@ function shuffle(arra1) {
     return arra1;
 }
 
+// Function to start a new game by reloading the page
+
+$(".new-game").click(function newGame(){
+    window.location.reload();  
+});
 
 
 
