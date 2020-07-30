@@ -69,6 +69,7 @@ function createCards() {
         let card = "<div class='card'><div class='flip-card' id='card"+i+"' onclick='selectCard("+i+","+flags[i]+")'><div class='front-of-card'></div><div class='back-of-card' style='background-image:url(assets/images/flag"+flags[i]+".png'></div></div></div>";
         gameArea.append(card);
     }
+    startCountdown(seconds);
 }
 
 
@@ -89,6 +90,7 @@ function selectCard(id,current){
         if(flipIndex == 2){
             secondFlippedCard=current;
             if(firstFlippedCard == secondFlippedCard){
+                flipSound.pause();
                 matchSound.play();
                 setTimeout(function(){
                     flipIndex = 0;
@@ -122,11 +124,26 @@ function shuffle(arra1) {
     return arra1;
 }
 
+// Function to start countdown from 60 seconds when game begins
+function startCountdown(seconds){
+    time.text(secondsInput);
+
+    if(secondsInput == 0){
+        clearTimeout(countDown);
+    }
+    secondsInput--
+    countDown = setTimeout(function(){startCountdown(seconds);},1000);
+}
+
+
+
 // Function to start a new game by reloading the page
 
 $(".new-game").click(function newGame(){
     window.location.reload();  
 });
+
+
 
 
 
