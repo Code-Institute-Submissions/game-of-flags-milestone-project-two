@@ -35,7 +35,7 @@ let cardCheck = 0; //Restrict only two cards to be flipped and checked at a time
 let score = 0; //number of matches made
 let status = 0; //keep track of the randomNumber's uniqueness
 let countDown; //keep track of countdown timer
-let secondsInput = 100; //keep track of timer from 60seconds
+let secondsInput = 5; //keep track of timer from 60seconds
 let seconds = secondsInput; 
 let gameLevel = 1; // start game from level 1
 let currentLevel = gameLevel; //will increment as game level changes
@@ -53,14 +53,14 @@ let finalVictoryResult = $("result-for final success");
 let faillureResult = $("#result-for-faillure");
 
 
-// Hide intro Overlay
+// Function to hide intro Overlay
 $(".new-game-button").click( ()=> {
     bgSound.play();
     $("#intro-section").fadeOut();
     createCards();
 });
 
-// Create cards dynamically
+// Function to Create cards dynamically
 function createCards() {
 
     flags = shuffle(flags);
@@ -73,7 +73,7 @@ function createCards() {
 }
 
 
-// Make the flipping work and compare for similarity
+// Function to make the flipping work and compare for similarity
 function selectCard(id,current){
     console.log(id, current);
     let cardId = `#card${id}`;
@@ -92,7 +92,7 @@ function selectCard(id,current){
             if(firstFlippedCard == secondFlippedCard){
                 score++;
                 // call the showResult function if a player matches all cards
-                if (score == 10){
+                if (score == 2){
                     clearTimeout(countDown);
                     setTimeout(function(){showResult();},1000);
                     return;   
@@ -115,7 +115,7 @@ function selectCard(id,current){
     }
 }
 
-// function to shuffle the flags copied from w3resource.com
+// Function to shuffle the flags copied from w3resource.com
 function shuffle(arra1) {
     var ctr = arra1.length, temp, index;
 
@@ -152,7 +152,7 @@ function showResult(){
     bgSound.pause();
      $("#result-section").show();
     
-    if(score == 10){
+    if(score == 2){
         gameVictorySound.play();
         $("#result-for-success").show();
         $("#play-next-level-button").show();
@@ -163,6 +163,22 @@ function showResult(){
         $("#try-again-button").show();
     }
 }
+
+// Function to mute the background sound of the game 
+$(".mute-button").click(function(){
+    bgSound.pause();
+    $(".mute-button").hide();
+    $(".unmute-button").show();
+});
+
+//  Function to unmute the background sound of the game
+$(".unmute-button").click(function(){
+    bgSound.play();
+    $(".unmute-button").hide();
+    $(".mute-button").show();
+});
+
+
 
 // Function to start a new game by reloading the page
 $(".new-game").click(function newGame(){
