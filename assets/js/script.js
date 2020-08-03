@@ -11,7 +11,7 @@ const gameVictorySound = new Audio("assets/sounds/game-victory-sound.wav");
 
 const startGameButton = $("new-game-button");
 const playNextLevelButton = $("#play-next-level-button");
-const volumeControl = $(".sound-control")
+const volumeControl = $(".sound-control");
 const closeGameInfoButton = $(".close-game-info-button");
 
 // ------------------------------------------ Variables
@@ -81,7 +81,7 @@ function selectCard(id,current){
         $(cardId).addClass('flipCard180');
         flipSound.play();
 
-        flipIndex++
+        flipIndex++;
 
         if(flipIndex == 1){
             firstFlippedCard = current;
@@ -90,7 +90,7 @@ function selectCard(id,current){
         if(flipIndex == 2){
             secondFlippedCard = current;
             if(firstFlippedCard == secondFlippedCard){
-                score++
+                score++;
                 // call the showResult function if a player matches all cards
                 if (score == 10){
                     clearTimeout(countDown);
@@ -103,13 +103,13 @@ function selectCard(id,current){
                 matchSound.play();
                 setTimeout(function(){
                     flipIndex = 0;
-                }, 500)
+                }, 500);
             }else{
                 setTimeout(function(){
                     $(cardId).removeClass('flipCard180');
                     $(previousCard).removeClass('flipCard180');
                     flipIndex = 0;
-                }, 500)
+                }, 500);
             }
         }
     }
@@ -142,7 +142,7 @@ function startCountdown(seconds){
         setTimeout(function(){showResult();},1000);
         return;
     }
-    secondsInput--
+    secondsInput--;
     countDown = setTimeout(function(){startCountdown(seconds);},1000);  
 }
 
@@ -158,13 +158,11 @@ function showResult(){
         $("#play-next-level-button").show();
     }
     else{
-        gameOverSound.play()
+        gameOverSound.play();
         $("#result-for-failure").show();
         $("#try-again-button").show();
     }
 }
-
-
 
 // Function to start a new game by reloading the page
 $(".new-game").click(function newGame(){
