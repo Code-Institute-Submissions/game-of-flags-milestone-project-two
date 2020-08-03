@@ -27,7 +27,7 @@ body{
 
 .sub-headings h2{
     font-family: 'Fugaz one', cursive;
-    width: 25%;
+    width: 33%;
     float: left;
     text-align: center;
     font-size: 1.7rem;
@@ -38,6 +38,12 @@ body{
 .sub-headings span{
     color: blue;
 }
+
+.time-left,
+.matches-made{
+    font-family: 'Roboto', sans-serif;   
+}
+
 
 .mute-button, .unmute-button{
     font-family: 'Fugaz one', cursive;
@@ -151,6 +157,7 @@ body{
     backface-visibility: hidden;
     background-image: url("../images/front-of-card-image.png");
     background-size: cover;
+   
 }
 
 .back-of-card{

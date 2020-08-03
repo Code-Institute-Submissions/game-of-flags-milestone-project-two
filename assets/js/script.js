@@ -35,7 +35,7 @@ let cardCheck = 0; //Restrict only two cards to be flipped and checked at a time
 let score = 0; //number of matches made
 let status = 0; //keep track of the randomNumber's uniqueness
 let countDown; //keep track of countdown timer
-let secondsInput = 60; //keep track of timer from 60seconds
+let secondsInput = 100; //keep track of timer from 60seconds
 let seconds = secondsInput; 
 let gameLevel = 1; // start game from level 1
 let currentLevel = gameLevel; //will increment as game level changes
@@ -88,8 +88,17 @@ function selectCard(id,current){
             previousCard = cardId;
         }
         if(flipIndex == 2){
-            secondFlippedCard=current;
+            secondFlippedCard = current;
             if(firstFlippedCard == secondFlippedCard){
+                score++
+                // call the showResult function if a player matches all cards
+                if (score == 10){
+                    clearTimeout(countDown);
+                    setTimeout(function(){showResult();},1000);
+                    return;   
+                }
+
+                scoreRecord.text(score+"/10");
                 flipSound.pause();
                 matchSound.play();
                 setTimeout(function(){
@@ -127,18 +136,37 @@ function shuffle(arra1) {
 // Function to start countdown from 60 seconds when game begins
 function startCountdown(seconds){
     time.text(secondsInput);
-
+     // call the showResult function if a player runs out of time
     if(secondsInput == 0){
         clearTimeout(countDown);
+        setTimeout(function(){showResult();},1000);
+        return;
     }
     secondsInput--
-    countDown = setTimeout(function(){startCountdown(seconds);},1000);
+    countDown = setTimeout(function(){startCountdown(seconds);},1000);  
+}
+
+// Function to make a fancy display of game result
+function showResult(){
+    gameOver = true;
+    bgSound.pause();
+     $("#result-section").show();
+    
+    if(score == 10){
+        gameVictorySound.play();
+        $("#result-for-success").show();
+        $("#play-next-level-button").show();
+    }
+    else{
+        gameOverSound.play()
+        $("#result-for-failure").show();
+        $("#try-again-button").show();
+    }
 }
 
 
 
 // Function to start a new game by reloading the page
-
 $(".new-game").click(function newGame(){
     window.location.reload();  
 });
