@@ -164,6 +164,16 @@ function showResult(){
     }
 }
 
+// Function to relaod/restart the game when the "play-again" button is clicked
+$("#play-again-button").click(function(){   
+     window.location.reload();
+});
+
+// Function to reload/restart the game when the "try-again" button is clicked
+$("#try-again-button").click(function(){   
+     window.location.reload();
+});
+
 // Function to mute the background sound of the game 
 $(".mute-button").click(function(){
     bgSound.pause();
