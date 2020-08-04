@@ -5,7 +5,8 @@
   box-sizing: border-box;
 }
 body {
-  background-color: rgb(180, 242, 225);
+  /* background-color: rgb(180, 242, 225); */
+  background-color: #68FFEE;
 
   font-family: "Roboto", sans-serif;
 }
@@ -18,7 +19,8 @@ body {
 .main-heading {
   font-family: "Fugaz one", cursive;
   text-align: center;
-  color: #eb6383;
+  /* color: #eb6383; */
+  color: #530609;
   text-shadow: 2px 2px white;
   letter-spacing: 2px;
   font-size: 3rem;
@@ -32,11 +34,11 @@ body {
   text-align: center;
   font-size: 1.7rem;
   font-weight: lighter;
-  color: #eb6383;
+  color: #530609;
 }
 
 .sub-headings span {
-  color: blue;
+  color: #020091;
 }
 
 .time-left,
@@ -50,12 +52,13 @@ body {
   font-size: 1.2rem;
   width: 80%;
   /* margin-top: 1rem; */
-  color: white;
-  background-color: #eb6383;
-  border: none;
+  color: #000000;
+  background-color: #ff6879;
+  border: 1px solid #000000;
   border-radius: 5px;
   padding: 5px;
   outline: none;
+  cursor: pointer;
 }
 
 .unmute-button {
@@ -75,7 +78,8 @@ body {
   left: 0;
   position: absolute;
   z-index: 100;
-  background-color: rgb(180, 242, 225);
+  /* background-color: rgb(180, 242, 225); */
+   background-color: #68FFEE;
 }
 
 .intro-background-image {
@@ -89,6 +93,7 @@ body {
 }
 
 .intro-section-text {
+  color: #530609;
   font-size: 1.5rem;
   font-weight: bolder;
   text-align: center;
@@ -171,16 +176,17 @@ body {
   font-size: 1.5rem;
   width: 100%;
   margin-top: 1rem;
-  color: white;
-  background-color: #eb6383;
-  border: none;
+  color: #000000;
+  background-color: #FF6879;
+  /* border: none; */
+  border: 1px solid #000000;
   border-radius: 5px;
   padding: 5px;
   outline: none;
 }
 
 .new-game-button:hover {
-  background-color: rgba(206, 18, 62, 0.664);
+  background-color: #ff687ad8;
   cursor: pointer;
   box-shadow: 5px 5px 7px #fa9191;
 }
@@ -229,11 +235,12 @@ body {
 .result-heading-text {
   font-family: "Fugaz one", cursive;
   font-size: 2rem;
-  color: #eb6383;
+  color: #530609;
   text-align: center;
 }
 
 .result-text {
+    color: #530609;
   font-weight: bold;
   text-align: center;
   line-height: 2rem;
@@ -241,7 +248,7 @@ body {
 
 .result-section-popup-footer {
   height: 100px;
-  background-color: rgb(180, 242, 225);
+  background-color: #68FFEE;
   padding: 15px;
   border-style: solid;
   border-width: 0px 2px 2px 2px;
@@ -315,15 +322,15 @@ body {
 
 .footer-text {
   font-size: 1.5rem;
-  color: orange;
+  color: #090574;
   text-align: center;
   margin-top: 1rem;
-  text-shadow: 1px 1px 2px brown;
+  text-shadow: 1px 1px 2px white;
 }
 
 footer a {
   text-decoration: none;
-  color: #511845;
+  color: #990404;
 }
 
 footer a:hover {

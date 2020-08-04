@@ -35,7 +35,7 @@ let cardCheck = 0; //Restrict only two cards to be flipped and checked at a time
 let score = 0; //number of matches made
 let status = 0; //keep track of the randomNumber's uniqueness
 let countDown; //keep track of countdown timer
-let secondsInput = 5; //keep track of timer from 60seconds
+let secondsInput = 60; //keep track of timer from 60seconds
 let seconds = secondsInput; 
 let gameLevel = 1; // start game from level 1
 let currentLevel = gameLevel; //will increment as game level changes
