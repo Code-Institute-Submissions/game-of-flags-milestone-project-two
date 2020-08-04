@@ -5,9 +5,7 @@
   box-sizing: border-box;
 }
 body {
-  /* background-color: rgb(180, 242, 225); */
   background-color: #68FFEE;
-
   font-family: "Roboto", sans-serif;
 }
 
@@ -19,7 +17,6 @@ body {
 .main-heading {
   font-family: "Fugaz one", cursive;
   text-align: center;
-  /* color: #eb6383; */
   color: #530609;
   text-shadow: 2px 2px white;
   letter-spacing: 2px;
@@ -87,6 +84,7 @@ body {
   margin-left: 15%;
 }
 
+/* size the image and prevent the image from being dragged */
 .intro-background-image img {
   width: 80%;
   height: 80%;
@@ -97,11 +95,12 @@ body {
   font-size: 1.5rem;
   font-weight: bolder;
   text-align: center;
+  margin-top: 1rem;
 }
 
 .intro-section-play-button {
   width: 150px;
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 
 /* ---------Deck of cards section containing style for cards and New Game button */
@@ -133,6 +132,7 @@ body {
   height: 100%;
   transition: transform 0.6s;
   transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
   text-align: center;
 }
 
@@ -153,6 +153,7 @@ body {
   width: 122px;
   height: 122px;
   -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
@@ -355,6 +356,11 @@ footer a:hover {
     width: 50%;
     justify-content: space-evenly;
   }
+
+  .sound-control h2{
+     margin: 0.5rem auto;
+  }
+
   .card {
     width: 75px;
     height: 75px;

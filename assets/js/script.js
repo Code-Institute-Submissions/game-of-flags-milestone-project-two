@@ -52,6 +52,8 @@ let victoryResult = $("#result-for-success");
 let finalVictoryResult = $("result-for final success");
 let faillureResult = $("#result-for-faillure");
 
+// Function to prevent intro-overlay-image from being dragged
+$("#intro-overlay-image").attr('draggable', false);
 
 // Function to hide intro Overlay
 $(".new-game-button").click( ()=> {
@@ -92,7 +94,7 @@ function selectCard(id,current){
             if(firstFlippedCard == secondFlippedCard){
                 score++;
                 // call the showResult function if a player matches all cards
-                if (score == 2){
+                if (score == 10){
                     clearTimeout(countDown);
                     setTimeout(function(){showResult();},1000);
                     return;   
@@ -152,7 +154,7 @@ function showResult(){
     bgSound.pause();
      $("#result-section").show();
     
-    if(score == 2){
+    if(score == 10){
         gameVictorySound.play();
         $("#result-for-success").show();
         $("#play-next-level-button").show();
