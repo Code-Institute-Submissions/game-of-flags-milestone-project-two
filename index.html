@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -16,7 +17,7 @@
 </head>
 
 <body>
-	<!-- Header section containing main heading and sub-headings -->
+	<!-- Header section containing main heading -->
 	<header>
 		<h1 class="main-heading">GAME OF FLAGS</h1>
 	</header>
@@ -29,7 +30,8 @@
 				<img id="intro-overlay-image" src="assets/images/intro-section-overlay-background-image.png" alt="intro-section-background-image"></div>
 				<div class="intro-section-popup">
 
-					<p class="intro-section-text">Match all pair of flags before you run out of time. Click on "Play" to begin the
+					<p class="intro-section-text">Match all pair of flags before you run out of time. Click on "Play" to
+						begin the
 						journey of concentration!</p>
 					<div class="intro-section-play-button"><button class="new-game-button">Play</button></div>
 				</div>
@@ -37,12 +39,11 @@
 
 	</section>
 
-	<!-- Deck of cards section containing cards and  New Game button. Cards will be added dynamically with Javascript. At this stage I have added the cards with html for development purpose -->
 	<section id="deck-of-cards" class="container">
 		<div class="sub-headings">
 			<h2>Time: <span class="time-left">60</span></h2>
 			<h2>Match <span class="matches-made">00/10</span></h2>
-			<!-- <h2>Level: <span class="current-level">1</span></h2> -->
+
 			<div class="sound-control">
 				<h2><button class="mute-button">Mute</button></h2>
 				<h2><button class="unmute-button">Unmute</button></h2>
@@ -53,7 +54,9 @@
 		<div id="deck-of-cards-container">
 
 		</div>
-		<div class="new-game"> <button class="new-game-button new-game">New Game</button></div>
+
+		<div class="new-game"><button class="new-game-button">Reset</button></div>
+
 	</section>
 	<section id="result-section">
 		<div class="result-section-overlay"></div>
@@ -62,12 +65,8 @@
 				<div id="result-section-popup-body">
 					<div id="result-for-success"><img class="result-gif" src="https://i.gifer.com/YARz.gif" alt="thumbs-up gif" >
 						<h2 id="result-success-heading" class="result-heading-text">Congratulations!</h2>
-						<p class="result-text">You won! You can now advance to the next level by clicking on the "Play"
-							button bellow.</p>
-					</div>
-					<div id="result-for-final-success"><img class="result-gif" src="https://i.gifer.com/YARz.gif" alt="thumb-up gif" >
-						<h2 class="result-heading-text">Congratulations!</h2>
-						<p class="result-text">Game completed! You can click on "Play Again" button to start a new game.
+						<p class="result-text">You won! More game levels will be added in the nearest future. For now
+							you can go back to the home page or exit game by clicking on "Home" or "Exit" respectively.
 						</p>
 					</div>
 
@@ -79,7 +78,6 @@
 				</div>
 				<div class="result-section-popup-footer">
 					<div class="result-section-button">
-						<button id="play-next-level-button" class="new-game-button">Play</button>
 						<button id="play-again-button" class="new-game-button">Play Again</button>
 						<button id="try-again-button" class="new-game-button">Try Again</button>
 					</div>

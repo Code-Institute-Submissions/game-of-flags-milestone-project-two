@@ -4,13 +4,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   background-color: #68FFEE;
   font-family: "Roboto", sans-serif;
 }
 
 .container {
-  width: 600px;
+  width: 550px;
   margin: auto;
 }
 /*-------------------------------------------------------------------HEADER   */
@@ -21,7 +22,7 @@ body {
   text-shadow: 2px 2px white;
   letter-spacing: 2px;
   font-size: 3rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .sub-headings h2 {
@@ -29,7 +30,7 @@ body {
   width: 33%;
   float: left;
   text-align: center;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: lighter;
   color: #530609;
 }
@@ -84,7 +85,7 @@ body {
   margin-left: 15%;
 }
 
-/* size the image and prevent the image from being dragged */
+/* size the image on .intro-section-overlay*/
 .intro-background-image img {
   width: 80%;
   height: 80%;
@@ -114,16 +115,18 @@ body {
 
 .card {
   background-color: white;
-  width: 125px;
-  height: 125px;
+  width: 120px;
+  height: 120px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 25px;
+  /* margin-top: 10px; */
+  /* margin: auto; */
+  margin: 8px auto;
   border-radius: 5px;
   cursor: pointer;
   position: relative;
-  border: 1px solid #eb6383;
+  border: 1px solid #000000;
 }
 
 .flip-card {
@@ -133,7 +136,7 @@ body {
   transition: transform 0.6s;
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
-  text-align: center;
+  
 }
 
 /* Testing the flipping with CSS but it will later be done with Javascript */
@@ -150,8 +153,9 @@ body {
 .front-of-card,
 .back-of-card {
   position: absolute;
-  width: 122px;
-  height: 122px;
+  width: 118px;
+  height: 118px;
+  border-radius: 5px;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -175,11 +179,10 @@ body {
 .new-game-button {
   font-family: "Fugaz one", cursive;
   font-size: 1.5rem;
-  width: 100%;
-  margin-top: 1rem;
+  width: 150px;
+  /* margin: 0.5rem auto; */
   color: #000000;
   background-color: #FF6879;
-  /* border: none; */
   border: 1px solid #000000;
   border-radius: 5px;
   padding: 5px;
@@ -366,6 +369,7 @@ footer a:hover {
     height: 75px;
     margin-top: 10px;
     margin-right: 5px;
+    margin: 5px auto;
   }
 
   .front-of-card,

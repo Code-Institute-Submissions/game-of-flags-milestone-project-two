@@ -157,7 +157,7 @@ function showResult(){
     if(score == 10){
         gameVictorySound.play();
         $("#result-for-success").show();
-        $("#play-next-level-button").show();
+        $("#play-again-button").show();
     }
     else{
         gameOverSound.play();
