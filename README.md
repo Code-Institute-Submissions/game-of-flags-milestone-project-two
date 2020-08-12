@@ -64,5 +64,52 @@ Balsamiq Wireframes is a rapid low-fidelity UI wireframing tool that reproduces 
 
 ## Deployment
 
+This project has been deployed to Github Pages from the master branch. A link to the deployed version of the site can be found [here]( https://takaforyannick30.github.io/game-of-flags-milestone-project-two/).
+
+This site was developed using Gitpod. All changes to the code were then added and committed to a local repository. The commits were then pushed to my GitHub repository.The process can be seen as bellow;
+
+`git add (add file name)`
+
+`git commit -m (add a commit mesage)` with "initial commit" always serving as the first commit message to a new repository.
+
+`git push` 
+
+ The project was hosted using GitHub pages directly from the master branch. In order for the site to deploy correctly on GitHub pages, the landing page must be named index.html. The process of deploying this project on GitHub pages can be seen as bellow; 
+
+* Go to the settings tab of the repository, and scroll down to GitHub pages.
+
+* Under GitHub pages, click on "source" and select the master branch.
+
+* You will be automatically taken to the top of the page wherein a light blue bar will be stated: "GitHub pages source saved".
+
+* Scroll down to GitHub pages where will be stated "your site is ready to be published at "[ https://takaforyannick30.github.io/game-of-flags-milestone-project-two/]( https://takaforyannick30.github.io/game-of-flags-milestone-project-two/)".
+
+* Click on the URL and you will be auto-referred to the published webpage. When returning to the GitHub repository setting, scroll down to GitHub pages and you will see a light green block stating "Your site is published at " [ https://takaforyannick30.github.io/game-of-flags-milestone-project-two/]( https://takaforyannick30.github.io/game-of-flags-milestone-project-two/)".
+
+To run locally, you can clone this repository directly into the editor of your choice by pasting `git clone   https://takaforyannick30.github.io/game-of-flags-milestone-project-two.git` into your terminal. To cut ties with this GitHub repository, type `git remote rm origin` into the terminal.
+
+You can submit a pull request to the master branch and await approval. To do this:
+
+* Navigate to the [original repository]( https://takaforyannick30.github.io/game-of-flags-milestone-project-two)
+
+* Click on **New pull request** on the right of the Branch menu
+
+* On the compare page, click **compare across forks**
+
+* Confirm that the base fork is the repository you'd like to merge into
+
+* Use the head fork drop-down menu to select your fork,then use the compare branch drop-down menu to select the branch you made your changes in* Type a little description for your pull request
+
+* If you do not want to allow anyone with push access to the upstream repository to make changes to your PR, unselect **Allow edits from maintainers**
+
+* Click **Create pull request**
+
 ## Credits
+
+### Disclaimer
+
+This project is for educational purposes only.
+
+
+[Back to top ↑](##Table-of-Content)
 
