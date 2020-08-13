@@ -1,11 +1,11 @@
 // ----------------------------------------------Sound Variables
 
-const bgSound = new Audio("assets/sounds/background-sound.mp3");
-const flipSound = new Audio("assets/sounds/card-flip-sound.wav");
-const matchSound = new Audio("assets/sounds/card-match-sound.wav");
+const bg_Sound = new Audio("assets/sounds/background-sound.mp3");
+const flip_Sound = new Audio("assets/sounds/card-flip-sound.wav");
+const match_Sound = new Audio("assets/sounds/card-match-sound.wav");
 
-const gameOverSound = new Audio("assets/sounds/game-over-sound.wav");
-const gameVictorySound = new Audio("assets/sounds/game-victory-sound.wav");
+const game_Over_Sound = new Audio("assets/sounds/game-over-sound.wav");
+const game_Victory_Sound = new Audio("assets/sounds/game-victory-sound.wav");
 
 // ------------------------------------------ Variables
 
@@ -32,7 +32,7 @@ $("#intro-overlay-image").attr('draggable', false);
 
 // Function to hide intro Overlay
 $(".new-game-button").click( ()=> {
-    bgSound.play();
+    bg_Sound.play();
     $("#intro-section").fadeOut();
     createCards();
 });
@@ -56,7 +56,7 @@ function selectCard(id,current){
     let cardId = `#card${id}`;
     if(!$(cardId).hasClass('flipCard180') && flipIndex!=2){
         $(cardId).addClass('flipCard180');
-        flipSound.play();
+        flip_Sound.play();
 
         flipIndex++;
 
@@ -76,8 +76,8 @@ function selectCard(id,current){
                 }
 
                 scoreRecord.text(score+"/10");
-                flipSound.pause();
-                matchSound.play();
+                flip_Sound.pause();
+                match_Sound.play();
                 setTimeout(function(){
                     flipIndex = 0;
                 }, 500);
@@ -126,16 +126,16 @@ function startCountdown(seconds){
 // Function to make a fancy display of game result
 function showResult(){
     gameOver = true;
-    bgSound.pause();
+    bg_Sound.pause();
      $("#result-section").show();
     
     if(score == 10){
-        gameVictorySound.play();
+        game_Victory_Sound.play();
         $("#result-for-success").show();
         $("#play-again-button").show();
     }
     else{
-        gameOverSound.play();
+        game_Over_Sound.play();
         $("#result-for-failure").show();
         $("#try-again-button").show();
     }
@@ -153,14 +153,14 @@ $("#try-again-button").click(function(){   
 
 // Function to mute the background sound of the game 
 $(".mute-button").click(function(){
-    bgSound.pause();
+    bg_Sound.pause();
     $(".mute-button").hide();
     $(".unmute-button").show();
 });
 
 //  Function to unmute the background sound of the game
 $(".unmute-button").click(function(){
-    bgSound.play();
+    bg_Sound.play();
     $(".unmute-button").hide();
     $(".mute-button").show();
 });
