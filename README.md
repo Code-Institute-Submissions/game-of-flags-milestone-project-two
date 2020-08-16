@@ -12,6 +12,32 @@ I created this game to serve the purpose of my Interactive Frontend Development 
 
 ## Features
 
+### Functionality
+* The game starts with an overlay containing a "play" button which starts the game when clicked.  
+* The pointer changes to a hand when hovered over the cards and overlays.  
+* The cards increase in size when hovered over.
+* When a card is flipped the player hears a flip sound.* Matches made are counted all through the game. * Time countdown - the user has 60 seconds to match all cards.  
+* "Victory" overlay appears when the player matches all cards within 60seconds with a "play-again" button which takes the user back to the home page.
+* "Game Over" overlay appears when the player fails to match all cards within 60 seconds.
+* All cards can't be seen at the same time. If a player clicks on one card, it stays flipped. When clicking on a second card it flips and both cards then turn back if it is not a match.  
+*The game reloads when a player clicks on "Reset", "Play Again" and "Try Again" * Background sound starts playing as soon as the game starts. The player also hears sounds when a match is made, when game is won and when game is lost.
+
+### Existing features
+
+* **Game Intro overlay**
+* **Mute and Unmute button** for background music
+* **Cards**
+* **Timer**
+* **match counter**
+* **Victory overlay**
+* **Game Over overlay**
+
+### Features Left To Implement
+
+* Add more game levels. At the moment the game has just one level but in the nearest future I would love to add more game levels to make the game more interesting.
+* Add a Pause button. I would like to add a pause button which allows users to pause the game.
+* Add a Leaderboard. In the nearest future when I learn Python, I would like to implement a highscore leaderboard for players.
+
 ## Technologies Used
 
 ### languages used
