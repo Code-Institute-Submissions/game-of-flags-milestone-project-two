@@ -1,4 +1,4 @@
-
+/* -----------------------------------------------------------General */
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +14,29 @@ body {
   width: 550px;
   margin: auto;
 }
+
+.game-button{
+  font-family: "Fugaz one", cursive;
+  font-size: 1.5rem;
+  width: 150px;
+  color: #000000;
+  background-color: #FF6879;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 5px;
+  outline: none;
+}
+
+.game-button:hover{
+  background-color: #ff687ad8;
+  cursor: pointer;
+  box-shadow: 5px 5px 7px #fa9191;
+}
+
+.game-button:active{
+box-shadow: 1px 1px 2px #fa9191;
+}
+
 /*-------------------------------------------------------------------HEADER   */
 .main-heading {
   font-family: "Fugaz one", cursive;
@@ -22,7 +45,7 @@ body {
   text-shadow: 2px 2px white;
   letter-spacing: 2px;
   font-size: 3rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 .sub-headings h2 {
@@ -44,30 +67,11 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.mute-button,
-.unmute-button {
-  font-family: "Fugaz one", cursive;
-  font-size: 1.2rem;
-  width: 80%;
-  /* margin-top: 1rem; */
-  color: #000000;
-  background-color: #ff6879;
-  border: 1px solid #000000;
-  border-radius: 5px;
-  padding: 5px;
-  outline: none;
-  cursor: pointer;
-}
-
 .unmute-button {
   display: none;
 }
 
 /* -------------------------------------------Intro Section */
-
-/* #intro-section{
-    display: none;
-}  */
 
 .intro-section-overlay {
   width: 100%;
@@ -76,8 +80,7 @@ body {
   left: 0;
   position: absolute;
   z-index: 100;
-  /* background-color: rgb(180, 242, 225); */
-   background-color: #68FFEE;
+  background-color: #68FFEE;
 }
 
 .intro-background-image {
@@ -114,7 +117,7 @@ body {
 }
 
 .card {
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.658);
   width: 120px;
   height: 120px;
   display: flex;
@@ -139,12 +142,7 @@ body {
   
 }
 
-/* Testing the flipping with CSS but it will later be done with Javascript */
-
-/* .card:hover .flip-card{
-    transform: rotateY(180deg);
-} */
-
+/* This class will be added via Javascript to make the flipping work on-click */
 .flipCard180 {
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
@@ -174,29 +172,6 @@ body {
   transition: 0.5s linear 0s;
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.new-game-button {
-  font-family: "Fugaz one", cursive;
-  font-size: 1.5rem;
-  width: 150px;
-  /* margin: 0.5rem auto; */
-  color: #000000;
-  background-color: #FF6879;
-  border: 1px solid #000000;
-  border-radius: 5px;
-  padding: 5px;
-  outline: none;
-}
-
-.new-game-button:hover {
-  background-color: #ff687ad8;
-  cursor: pointer;
-  box-shadow: 5px 5px 7px #fa9191;
-}
-
-.new-game-button:active {
-  box-shadow: 1px 1px 2px #fa9191;
 }
 
 /* -------------------------------------------------------Result Section */
@@ -328,7 +303,6 @@ body {
   font-size: 1.5rem;
   color: #090574;
   text-align: center;
-  margin-top: 1rem;
   text-shadow: 1px 1px 2px white;
 }
 
@@ -374,8 +348,8 @@ footer a:hover {
 
   .front-of-card,
   .back-of-card {
-    width: 70px;
-    height: 70px;
+    width: 73px;
+    height: 73px;
   }
 
   #result-section-popup {

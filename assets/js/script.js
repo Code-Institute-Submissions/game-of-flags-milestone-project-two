@@ -1,6 +1,6 @@
 // ----------------------------------------------Sound Variables
 
-const bg_Sound = new Audio("assets/sounds/background-sound.mp3");
+const bg_Sound = new Audio("assets/sounds/background-sound.wav");
 const flip_Sound = new Audio("assets/sounds/card-flip-sound.wav");
 const match_Sound = new Audio("assets/sounds/card-match-sound.wav");
 
