@@ -10,6 +10,32 @@ I created this game to serve the purpose of my Interactive Frontend Development 
 
 ## UX
 
+### User Stories
+
+* I want a game I can play to improve my memory.
+* I want the game to be presented in a visually appealing and non-distracting way.
+* I want to be able to play the game on any device.
+* I want to be presented with a brief instruction of what I need to do to win the game.
+* I want to hear a game background sound when am playing the game and I would like to be able to mute it if I chose to.
+* I want to hear a flip sound when I flip a card.
+* I want to hear a matching sound when I match a pair of flags.
+* I want to be notified I won the game if I match all pair of flags within the given time frame.
+* I want to be notified I lost the game if I run out of time.
+
+### Research
+
+To understand the game, I researched existing versions of the Javascript memory card matching game on Youtube and Udemy. And it gave me an idea of the layout and functionality implemented in the tutorials. This greatly inspired me with features I could implement in my own version of the game.
+
+### Style Rationale
+
+I wanted to keep it simple while practicing responsive design. In order to make different elements visually distinct, I chose a color palette of soft contrasting colors that complement each other.
+
+### Wireframes
+
+The wireframes used in this project were built using Balsamiq Wireframes. These were the first versions but in the development process, there were many changes. For example, initially, I had planned to include "Game Info" as one of the features but I later decided to delete it and maintain a brief game instruction on the game-intro-overlay which appears on the start screen. 
+
+In addition, I was planning to add 3 game levels but because I could not achieve this within the given time frame I had, I decided I will implement it in the nearest future and as such, I had to delete "level: 1" from the app because it was meant to indicate the current game level. And if it's just a one-level game then indicating the current level will be pointless.
+
 ## Features
 
 ### Functionality
@@ -20,7 +46,7 @@ I created this game to serve the purpose of my Interactive Frontend Development 
 * "Victory" overlay appears when the player matches all cards within 60seconds with a "play-again" button which takes the user back to the home page.
 * "Game Over" overlay appears when the player fails to match all cards within 60 seconds.
 * All cards can't be seen at the same time. If a player clicks on one card, it stays flipped. When clicking on a second card it flips and both cards then turn back if it is not a match.  
-*The game reloads when a player clicks on "Reset", "Play Again" and "Try Again" * Background sound starts playing as soon as the game starts. The player also hears sounds when a match is made, when game is won and when game is lost.
+* The game reloads when a player clicks on "Reset", "Play Again" and "Try Again" * Background sound starts playing as soon as the game starts. The player also hears sounds when a match is made, when game is won and when game is lost.
 
 ### Existing features
 
@@ -88,6 +114,36 @@ Balsamiq Wireframes is a rapid low-fidelity UI wireframing tool that reproduces 
 
 ##  Testing
 
+This project has undergone extremely thorough testing. The user story of this project achieved the intended outcome. The manual test was carried out at every stage to ensure user experience standards remained at consistently high levels with each new implementation. 
+
+The Game Of Flags application was tested across multiple browsers such as Google Chrome, Safari, Microsoft Edge, Mozilla Firefox,and Opera Mini. It was also tested on multiple mobile devices such as iPhone 4, 5, 7, 8(plus) Chrome and Safari, iPad, Samsung Galaxy,and Huawei P30 Pro to ensure compatibility and responsiveness.
+
+### Manual Test
+
+* The "Play" button which is on the game-intro-overlay which happens to be the start screen of the game works well as intended. When clicked upon, the intro-overlay fades out and the game starts.
+
+* Clicking a card makes the card to flip. Clicking on all cards fast does not flip the cards as only two cards can be flipped at a time. When two cards are flipped, they are being checked for comparison and will flip back or remain open if they are not the same or if they are the same respectively.
+
+* Clicking on the "Mute" button results in the background sound being paused while the text of the button changes to Unmute. And when clicked on the "Unmute" button the background sound will resume and the text of the button will change to mute.
+
+* The "Reset" button also works well as intended. When clicked upon the game reloads.* All pairs of flags have been matched multiple times within 60 seconds. Upon matching all pairs of flags within the given time frame, a victory popup with a heading "Congratulations"  appears notifying the player of the victory.
+
+* I have also let the timer run out many times to check if I will be notified of losing. When all cards are not matched within 60 seconds, a popup with a heading "You Lose" appears.
+
+* The popup which appears upon winning or losing contains a "Play Again" and a "Try Again" button respectively. When clicked upon any of these buttons the game reloads. 
+
+* The game's timer indicates the time correctly and stops counting down when all cards are matched or when it gets to zero.
+
+### Errors
+
+**Resolved Errors**
+
+* During the development of this app, I realized that the image of the World map which appeared on the start screen of the game could be dragged. I solved this problem using the following Javascript code `$("#intro-overlay-image").attr('draggable', false);`
+
+**Unresolved Errors**
+
+* If a player clicks on the cards too fast, only the first flip sound gets played. The second flip sound does not get played because the first signal is already "busy". This easily occurs when playing on mobile or tablet because it is easier to flip fast when using these mentioned devices compared to desktop.
+
 ## Deployment
 
 This project has been deployed to Github Pages from the master branch. A link to the deployed version of the site can be found [here]( https://takaforyannick30.github.io/game-of-flags-milestone-project-two/).
@@ -131,6 +187,28 @@ You can submit a pull request to the master branch and await approval. To do thi
 * Click **Create pull request**
 
 ## Credits
+
+### Content
+
+* Most of the functionality implemented in this project are things I learnt from a tutorial I bought from Udemy titled "[Learn Javascript by creating a memory game with high scores](https://www.udemy.com/course/javascript-game-with-facebook-login-and-high-scores/learn/lecture/16943398#overview)". The author of the course is Yashin Soraballee.
+
+* [w3schools.com](https://www.w3schools.com/) was very helpful and it was my main source of reference during the development of this project.
+
+* The shuffle function I used in my Javascript code was copied from [w3resource.com](https://www.w3resource.com/javascript-exercises/javascript-array-exercise-17.php).
+
+### Media
+* The images of all flags used in this project were obtained from [COUNTRYFLAGS.com](https://www.countryflags.com/en/image-overview/)
+
+* The image of the World map which appears on the game start screen and in the front of all cards was obtained from [PNGITEM](https://www.pngitem.com/middle/hiwommi_world-map-in-3d-transparent-hd-png-download/).
+
+* All the sounds used in this project were obtained from [freesound](https://freesound.org/).
+
+* The Gifs used on the results popup of this project were obtained from [gifer.com](https://gifer.com/en/gifs/thumbs-up).
+
+### Acknowledgement
+* I received inspiration for this project from a similar game app project titled [Juicy Fruit](https://github.com/sabinemm/fruit-game).
+
+* A special thanks to my mentor, Sandeep Aggarwal, for his feedback on my project's scope, design and functionality, and for hints on what information to include in my README.md.  
 
 ### Disclaimer
 
