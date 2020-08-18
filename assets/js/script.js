@@ -13,7 +13,7 @@ let secondFlippedCard;// keep track of the second flipped card
 let previousCard; // keep track of the previous flipped card
 let score = 0; //number of matches made
 let countDown; //keep track of countdown timer
-let secondsInput = 10; //keep track of timer from 60seconds
+let secondsInput = 60; //keep track of timer from 60seconds
 let seconds = secondsInput; 
 let gameOver = false; 
 
@@ -26,7 +26,7 @@ let scoreRecord = $(".matches-made");
 $("#intro-overlay-image").attr('draggable', false);
 
 // Hide intro Overlay and start the game
-$(".new-game-button").click( ()=> {
+$(".new-game-button").click( function(){
     bg_Sound.play();
     $("#intro-section").fadeOut();
     createCards();
@@ -47,7 +47,6 @@ function createCards() {
 
 // Make the flipping work and compare for similarity
 function selectCard(id,current){
-    console.log(id, current);
     let cardId = `#card${id}`;
     if(!$(cardId).hasClass('flipCard180') && flipIndex!=2){
         $(cardId).addClass('flipCard180');
@@ -120,7 +119,7 @@ function showResult(){
      $("#result-section").show();
     
     if(score == 10){
-        let score = 10
+        let score = 10;
         scoreRecord.text(score+"/10");
         game_Victory_Sound.play();
         $("#result-for-success").show();

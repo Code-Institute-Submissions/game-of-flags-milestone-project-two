@@ -38,6 +38,8 @@ In addition, I was planning to add 3 game levels but because I could not achieve
 
 Also, I don't have additional wireframes for levels 2 and 3 because I was planning to maintain the same number of cards but change just the time from 60 seconds, 50 seconds, and 40 seconds for level 1, level 2, and level 3 respectively.
 
+After playing the GAME OF FLAGS memory game more than 100 times and failing to match all cards within 60 seconds more than 30 times, I do believe 60 seconds is not ideal for level 1 because it should be an easy level. But since the game has just one level at the moment, I will maintain the time as 60 seconds so that it can be a bit challenging, which will in turn makes it interesting.
+
 [Start Screen Wireframes ](https://github.com/Takaforyannick30/game-of-flags-milestone-project-two/blob/master/assets/wireframes/game-complete-wireframe-idea.pdf)
 
 [Game Screen Wireframes](https://github.com/Takaforyannick30/game-of-flags-milestone-project-two/blob/master/assets/wireframes/game-screen-wireframe-idea.pdf)
@@ -144,7 +146,11 @@ The Game Of Flags application was tested across multiple browsers such as Google
 
 * The popup which appears upon winning or losing contains a "Play Again" and a "Try Again" button respectively. When clicked upon any of these buttons the game reloads. 
 
+* I tested the app on multiple devices to see if all contents are visible on all screen sizes. And I will like to acknowledge that on some devices(around max screen width of 360px) a little bit of scrolling down might be needed.  
+
 * The game's timer indicates the time correctly and stops counting down when all cards are matched or when it gets to zero.
+
+* The game's "Match: 00/10" indicates the matches made correctly but failed to display "10/10" when all cards were matched. I added about two lines of code in the script.js file and I can now confirm it displays correctly as intended.
 
 ### Errors
 
@@ -152,9 +158,20 @@ The Game Of Flags application was tested across multiple browsers such as Google
 
 * During the development of this app, I realized that the image of the World map which appeared on the start screen of the game could be dragged. I solved this problem using the following Javascript code `$("#intro-overlay-image").attr('draggable', false);`
 
+* One problem I encountered was with Safari (on all devices) while flipping cards. During the animation of cards flipping, it glitched and half of the other side was visible during the animation. I added vendor prefixes to transform styles but it did not solve the issue. After thoroughly checking my code for styling the cards I realized I was missing a line of code `perspective: 1000px;`, which I added to `.card`, and the issue was resolved.
+
 **Unresolved Errors**
 
 * If a player clicks on the cards too fast, only the first flip sound gets played. The second flip sound does not get played because the first signal is already "busy". This easily occurs when playing on mobile or tablet because it is easier to flip fast when using these mentioned devices compared to desktop.
+
+**HTML, CSS and JavaScript Code Validation**
+
+The HTML and CSS code file of this project was tested by direct input to [W3C Validator](https://validator.w3.org/) and no error was found. And the Javascript code file for this project was validated by direct input to [JSHint](https://jshint.com/) and no error/warning was found.
+
+**Mobile Friendly Test**
+
+A mobile friendly test of this website was done using [search.google.com](https://search.google.com/test/mobile-friendly). The responsiveness was also done using websites such as [Am I Responsive](http://ami.responsivedesign.is/) and [Responsinator](http://www.responsinator.com/).
+
 
 ## Deployment
 
