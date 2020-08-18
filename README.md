@@ -146,7 +146,7 @@ The Game Of Flags application was tested across multiple browsers such as Google
 
 * The popup which appears upon winning or losing contains a "Play Again" and a "Try Again" button respectively. When clicked upon any of these buttons the game reloads. 
 
-* I tested the app on multiple devices to see if all contents are visible on all screen sizes. And I will like to acknowledge that on some devices(around max screen width of 360px) a little bit of scrolling down might be needed.  
+* I tested the app on multiple devices to see if all contents are visible on all screen sizes. And I will like to acknowledge that on some devices(around max screen width of 320px) a little bit of scrolling down might be needed.  
 
 * The game's timer indicates the time correctly and stops counting down when all cards are matched or when it gets to zero.
 

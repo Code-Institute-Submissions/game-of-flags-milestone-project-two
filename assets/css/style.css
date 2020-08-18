@@ -310,12 +310,22 @@ footer a:hover {
 
   .main-heading {
     font-size: 2rem;
+    margin-top: 5%;
   }
 
   .sub-headings h2 {
     font-size: 1.4rem;
     width: 50%;
     justify-content: space-evenly;
+  }
+
+  .intro-background-image {
+    margin-top: 15%;
+    margin-bottom: 15%;
+  }
+
+  .intro-section-play-button {
+    margin-top: 15%;
   }
 
   .sound-control {
@@ -343,13 +353,16 @@ footer a:hover {
   }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 360px) {
+  .main-heading {
+    margin-top: 1%;
+    margin-bottom: -0.5rem;
+  }
   .sub-headings h2 {
     font-size: 1.2rem;
   }
-
-  .new-game-button {
-    margin-top: 0.6rem;
+  .card {
+    margin: 4px auto;
   }
 
   .footer-text {
