@@ -34,7 +34,19 @@ I wanted to keep it simple while practicing responsive design. In order to make 
 
 The wireframes used in this project were built using Balsamiq Wireframes. These were the first versions but in the development process, there were many changes. For example, initially, I had planned to include "Game Info" as one of the features but I later decided to delete it and maintain a brief game instruction on the game-intro-overlay which appears on the start screen. 
 
-In addition, I was planning to add 3 game levels but because I could not achieve this within the given time frame I had, I decided I will implement it in the nearest future and as such, I had to delete "level: 1" from the app because it was meant to indicate the current game level. And if it's just a one-level game then indicating the current level will be pointless.
+In addition, I was planning to add 3 game levels but because I could not achieve this within the given time frame I had, I decided I will implement it in the nearest future and as such, I had to delete "level: 1" from the app because it was meant to indicate the current game level. And if it's just a one-level game then indicating the current level will be pointless. 
+
+Also, I don't have additional wireframes for levels 2 and 3 because I was planning to maintain the same number of cards but change just the time from 60 seconds, 50 seconds, and 40 seconds for level 1, level 2, and level 3 respectively.
+
+[Start screen](https://github.com/Takaforyannick30/game-of-flags-milestone-project-two/blob/master/start-screen-wireframe-idea.pdf)
+
+[Game screen](https://github.com/Takaforyannick30/game-of-flags-milestone-project-two/blob/master/game-screen-wireframe-idea.pdf)
+
+[Victory Screen](https://github.com/Takaforyannick30/game-of-flags-milestone-project-two/blob/master/victory-screen-wireframe-idea.pdf)
+
+[Game complete screen](https://github.com/Takaforyannick30/game-of-flags-milestone-project-two/blob/master/game-complete-wireframe-idea.pdf)
+
+[Game over screen](https://github.com/Takaforyannick30/game-of-flags-milestone-project-two/blob/master/game-over-wireframe-idea)
 
 ## Features
 

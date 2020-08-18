@@ -117,14 +117,12 @@ box-shadow: 1px 1px 2px #fa9191;
 }
 
 .card {
-  background-color: rgba(0, 0, 0, 0.658);
+  background-color: white;
   width: 120px;
   height: 120px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* margin-top: 10px; */
-  /* margin: auto; */
   margin: 8px auto;
   border-radius: 5px;
   cursor: pointer;
@@ -172,6 +170,11 @@ box-shadow: 1px 1px 2px #fa9191;
   transition: 0.5s linear 0s;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.new game .reset-button{
+    width: 150px;
+    margin: 3rem auto;
 }
 
 /* -------------------------------------------------------Result Section */
@@ -240,13 +243,6 @@ box-shadow: 1px 1px 2px #fa9191;
   display: none;
 }
 
-#play-next-level-button {
-  display: none;
-}
-
-#result-for-final-success {
-  display: none;
-}
 
 #play-again-button {
   display: none;
