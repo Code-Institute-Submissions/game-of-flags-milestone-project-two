@@ -60,7 +60,10 @@ After playing the GAME OF FLAGS memory game more than 100 times and failing to 
 * "Victory" overlay appears when the player matches all cards within 60seconds with a "play-again" button which takes the user back to the home page.
 * "Game Over" overlay appears when the player fails to match all cards within 60 seconds.
 * All cards can't be seen at the same time. If a player clicks on one card, it stays flipped. When clicking on a second card it flips and both cards then turn back if it is not a match.  
-* The game reloads when a player clicks on "Reset", "Play Again" and "Try Again" * Background sound starts playing as soon as the game starts. The player also hears sounds when a match is made, when game is won and when game is lost.
+* Background sound starts playing as soon as the game starts. The player also hears sounds when a match is made, when game is won and when game is lost.
+* The game reloads when a player clicks on "Reset", "Play Again" and "Try Again".
+
+ 
 
 ### Existing features
 

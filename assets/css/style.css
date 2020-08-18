@@ -301,6 +301,22 @@ footer a:hover {
 }
 
 /* --------------------------------------------------------Media Queries */
+@media only screen and (max-width: 1024px){
+    .main-heading{
+        margin-top: 5%;
+    }
+
+    .intro-background-image {
+    margin-top: 15%;
+    margin-bottom: 15%;
+  }
+
+  .intro-section-play-button {
+    margin-top: 15%;
+  }
+
+}
+
 @media only screen and (max-width: 767px) {
   /* For Mobile Phones and tablets*/
 
