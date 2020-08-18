@@ -40,13 +40,13 @@ Also, I don't have additional wireframes for levels 2 and 3 because I was planni
 
 [Start Screen Wireframes ](https://github.com/Takaforyannick30/game-of-flags-milestone-project-two/blob/master/assets/wireframes/game-complete-wireframe-idea.pdf)
 
-[Game Screen Wireframes](https://github.com/Takaforyannick30/game-of-flags-milestone-project-two/blob/master/assets/game-screen-wireframe-idea.pdf)
+[Game Screen Wireframes](https://github.com/Takaforyannick30/game-of-flags-milestone-project-two/blob/master/assets/wireframes/game-screen-wireframe-idea.pdf)
 
-[Victory Screen Wireframes](https://github.com/Takaforyannick30/game-of-flags-milestone-project-two/blob/master/assets/victory-screen-wireframe-idea.pdf)
+[Victory Screen Wireframes](https://github.com/Takaforyannick30/game-of-flags-milestone-project-two/blob/master/assets/wireframes/victory-screen-wireframe-idea.pdf)
 
-[Game Complete Screen Wireframes](https://github.com/Takaforyannick30/game-of-flags-milestone-project-two/blob/master/assets/game-complete-wireframe-idea.pdf)
+[Game Complete Screen Wireframes](https://github.com/Takaforyannick30/game-of-flags-milestone-project-two/blob/master/assets/wireframes/game-complete-wireframe-idea.pdf)
 
-[Game Over Screen Wireframes](https://github.com/Takaforyannick30/game-of-flags-milestone-project-two/blob/master/assets/game-over-wireframe-idea.pdf)
+[Game Over Screen Wireframes](https://github.com/Takaforyannick30/game-of-flags-milestone-project-two/blob/master/assets/wireframes/game-over-wireframe-idea.pdf)
 
 ## Features
 
