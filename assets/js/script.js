@@ -1,43 +1,38 @@
 // ----------------------------------------------Sound Variables
-
 const bg_Sound = new Audio("assets/sounds/background-sound.wav");
 const flip_Sound = new Audio("assets/sounds/card-flip-sound.wav");
 const match_Sound = new Audio("assets/sounds/card-match-sound.wav");
-
 const game_Over_Sound = new Audio("assets/sounds/game-over-sound.wav");
 const game_Victory_Sound = new Audio("assets/sounds/game-victory-sound.wav");
 
 // ------------------------------------------ Variables
-
 let flags = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" ];
-
 let flipIndex = 0; //keep track of the number of flipped cards
 let firstFlippedCard;//keep track of the first flipped card
 let secondFlippedCard;// keep track of the second flipped card 
 let previousCard; // keep track of the previous flipped card
 let score = 0; //number of matches made
 let countDown; //keep track of countdown timer
-let secondsInput = 60; //keep track of timer from 60seconds
+let secondsInput = 10; //keep track of timer from 60seconds
 let seconds = secondsInput; 
 let gameOver = false; 
 
 // ------------------------------- Variables retrieve from HTML elements
-
 let gameArea = $("#deck-of-cards-container");
 let time = $(".time-left");
 let scoreRecord = $(".matches-made");
 
-// Function to prevent intro-overlay-image from being dragged
+// Prevent intro-overlay-image from being dragged
 $("#intro-overlay-image").attr('draggable', false);
 
-// Function to hide intro Overlay
+// Hide intro Overlay and start the game
 $(".new-game-button").click( ()=> {
     bg_Sound.play();
     $("#intro-section").fadeOut();
     createCards();
 });
 
-// Function to Create cards dynamically
+// Create cards dynamically
 function createCards() {
 
     flags = shuffle(flags);
@@ -50,7 +45,7 @@ function createCards() {
 }
 
 
-// Function to make the flipping work and compare for similarity
+// Make the flipping work and compare for similarity
 function selectCard(id,current){
     console.log(id, current);
     let cardId = `#card${id}`;
@@ -105,7 +100,7 @@ function shuffle(arra1) {
     return arra1;
 }
 
-// Function to start countdown from 60 seconds when game begins
+// Start countdown from 60 seconds when game begins
 function startCountdown(seconds){
     time.text(secondsInput);
      // call the showResult function if a player runs out of time
@@ -118,7 +113,7 @@ function startCountdown(seconds){
     countDown = setTimeout(function(){startCountdown(seconds);},1000);  
 }
 
-// Function to make a fancy display of game result
+// Make a fancy display of game result
 function showResult(){
     gameOver = true;
     bg_Sound.pause();
@@ -139,33 +134,21 @@ function showResult(){
     }
 }
 
-// Function to relaod/restart the game when the "play-again" button is clicked
-// $("#play-again-button").click(function(){   
-//      window.location.reload();
-// });
-
-// Function to reload/restart the game when the "try-again" button is clicked
-$(".reload-game").click(function(){   
-     window.location.reload();
-});
-
-// Function to mute the background sound of the game 
+// Mute the background sound of the game 
 $(".mute-button").click(function(){
     bg_Sound.pause();
     $(".mute-button").hide();
     $(".unmute-button").show();
 });
 
-//  Function to unmute the background sound of the game
+//  Unmute the background sound of the game
 $(".unmute-button").click(function(){
     bg_Sound.play();
     $(".unmute-button").hide();
     $(".mute-button").show();
 });
 
-
-
-// Function to start a new game by reloading the page
+// start a new game by reloading the page if "Reset", "Play Again" or "Try Again" buttons are clicked
 $(".new-game").click(function newGame(){
     window.location.reload();  
 });

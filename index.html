@@ -22,14 +22,13 @@
 		<h1 class="main-heading">GAME OF FLAGS</h1>
 	</header>
 
-	<!-- Intro-section is the main start screen of the game -->
+	<!-- Intro-section is the start screen of the game -->
 	<section id="intro-section">
 		<div class="intro-section-overlay">
 			<h2 class="main-heading">GAME OF FLAGS</h2>
 			<div class="intro-background-image">
-				<img id="intro-overlay-image" src="assets/images/intro-section-overlay-background-image.png" alt="intro-section-background-image"></div>
-				<div class="intro-section-popup">
-
+				<img src="assets/images/intro-section-overlay-background-image.png" alt="intro-section-background-image"></div>
+				<div>
 					<p class="intro-section-text">Match all pair of flags before you run out of time. Click on "Play" to
 						begin the
 						journey of concentration!</p>
@@ -39,38 +38,34 @@
 			</div>
 
 	</section>
-
-	<section id="deck-of-cards" class="container">
+	<!-- This section displays the time, match and the mute/unmute button -->
+	<section class="container">
 		<div class="sub-headings">
 			<h2>Time: <span class="time-left">60</span></h2>
 			<h2>Match: <span class="matches-made">00/10</span></h2>
-
 			<div class="sound-control">
 				<h2><button class="mute-button game-button">Mute</button></h2>
 				<h2><button class="unmute-button game-button">Unmute</button></h2>
 			</div>
 		</div>
-
 		<!-- Cards have been created dynamically and appended in the deck-of-cards-container -->
 		<div id="deck-of-cards-container">
-
 		</div>
-
-		<div class="new-game reset-game"><button class="reset-button game-button">Reset</button></div>
-
+		<div class="reset-game"><button class="reset-button game-button new-game">Reset</button></div>
 	</section>
+
+	<!-- Result section contains result popup to be displayed upon game vicory or game over -->
 	<section id="result-section">
 		<div class="result-section-overlay"></div>
 		<div class="container">
 			<div id="result-section-popup">
 				<div id="result-section-popup-body">
-					<div id="result-for-success"><img class="result-gif" src="https://i.gifer.com/YARz.gif" alt="thumbs-up gif" >
-						<h2 id="result-success-heading" class="result-heading-text">Congratulations!</h2>
+					<div id="result-for-success"><img class="result-gif" src="https://i.gifer.com/YARz.gif" alt="thumb-up gif" >
+						<h2 class="result-heading-text">Congratulations!</h2>
 						<p class="result-text">You won! More game levels will be added in the nearest future. For now
 							you can play again by clicking on the button bellow.
 						</p>
 					</div>
-
 					<div id="result-for-failure">
 						<img class="result-gif" src="https://i.gifer.com/3vIQ.gif" alt="thumb-down gif">
 						<h2 class="result-heading-text">You Lose!</h2>
@@ -79,8 +74,8 @@
 				</div>
 				<div class="result-section-popup-footer">
 					<div class="result-section-button">
-						<button id="play-again-button" class="game-button reload-game">Play Again</button>
-						<button id="try-again-button" class="game-button reload-game">Try Again</button>
+						<button id="play-again-button" class="game-button  new-game">Play Again</button>
+						<button id="try-again-button" class="game-button new-game">Try Again</button>
 					</div>
 				</div>
 			</div>
