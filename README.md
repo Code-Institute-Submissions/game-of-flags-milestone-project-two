@@ -38,15 +38,15 @@ In addition, I was planning to add 3 game levels but because I could not achieve
 
 Also, I don't have additional wireframes for levels 2 and 3 because I was planning to maintain the same number of cards but change just the time from 60 seconds, 50 seconds, and 40 seconds for level 1, level 2, and level 3 respectively.
 
-[Start screen](https://github.com/Takaforyannick30/game-of-flags-milestone-project-two/blob/master/start-screen-wireframe-idea.pdf)
+[Start Screen Wireframes ](https://github.com/Takaforyannick30/game-of-flags-milestone-project-two/blob/master/assets/wireframes/game-complete-wireframe-idea.pdf)
 
-[Game screen](https://github.com/Takaforyannick30/game-of-flags-milestone-project-two/blob/master/game-screen-wireframe-idea.pdf)
+[Game Screen Wireframes](https://github.com/Takaforyannick30/game-of-flags-milestone-project-two/blob/master/assets/game-screen-wireframe-idea.pdf)
 
-[Victory Screen](https://github.com/Takaforyannick30/game-of-flags-milestone-project-two/blob/master/victory-screen-wireframe-idea.pdf)
+[Victory Screen Wireframes](https://github.com/Takaforyannick30/game-of-flags-milestone-project-two/blob/master/assets/victory-screen-wireframe-idea.pdf)
 
-[Game complete screen](https://github.com/Takaforyannick30/game-of-flags-milestone-project-two/blob/master/game-complete-wireframe-idea.pdf)
+[Game Complete Screen Wireframes](https://github.com/Takaforyannick30/game-of-flags-milestone-project-two/blob/master/assets/game-complete-wireframe-idea.pdf)
 
-[Game over screen](https://github.com/Takaforyannick30/game-of-flags-milestone-project-two/blob/master/game-over-wireframe-idea)
+[Game Over Screen Wireframes](https://github.com/Takaforyannick30/game-of-flags-milestone-project-two/blob/master/assets/game-over-wireframe-idea.pdf)
 
 ## Features
 
