@@ -34,6 +34,8 @@ The Game Of Flags application is a simple replica of a classical memory card gam
 
 I created this game to serve the purpose of my Interactive Frontend Development Project. The project scope was to create the game using HTML, CSS, and Javascript, with the main focus being the functional logic created with Javascript. The name of this application was inspired by two things; firstly, my love for Game of Thrones and secondly, the choice of images for the project.
 
+![GAME OF FLAGS MULTI-SCREEN VIEW](assets/images/game-of-flags-preview.png)
+
 ## UX
 
 ### User Stories
