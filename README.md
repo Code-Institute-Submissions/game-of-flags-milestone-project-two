@@ -2,6 +2,32 @@
 
 ## Table of Content
 
+- [**About**](#About)
+- [**UX**](#UX)
+    - [User Stories](#User-Stories)
+  - [Research](#Research)
+  - [Style Rationale](#Style-Rationale)
+  - [Wireframes](#Wireframes)
+- [**Features**](#Features)
+    - [Functionality](#Functionality)
+    - [Existing features](#Existing-features)
+    - [Features Left To Implement](#Future-Left-To-Implement)
+- [**Technologies Used**](#Technologies-Used)
+    - [Languages Used](#Languages-Used)
+    - [Libraries and Frameworks](#Libraries-and-Frameworks)
+    - [Tools Used](#Tools-Used)
+- [**Testing**](#Testing)
+    - [Manual Test](#Manual-Test)
+    - [Errors](#Errors)
+    - [HTML, CSS and JavaScript Code Validation](#HTML,-CSS-and-JavaScript-Code-Validation)
+    - [Mobile Friendly Test](#Mobile-Friendly-Test)
+- [**Deployment**](#Deployment)
+- [**Credits**](#Credits)
+    - [Content](#Content)
+     - [Media](#Media)
+- [**Acknowledgements**](#Acknowledgements)
+- [**Disclaimer**](#Disclaimer)
+
 ## About
 
 The Game Of Flags application is a simple replica of a classical memory card game. The aim of the game is to match all pairs of flags before the time runs out. It requires observation, concentration, and a good memory to win. The game is also known as Concentration, Pelmanism, Shinkei-suijaku, Pexeso, and Pairs. You can find out more about the concentration game by visiting the [Wikipedia](https://en.wikipedia.org/wiki/Concentration_(card_game)) page and the rules of a classical table card game [here](https://www.classicgamesandpuzzles.com/Memory.html).
@@ -167,11 +193,11 @@ The Game Of Flags application was tested across multiple browsers such as Google
 
 * If a player clicks on the cards too fast, only the first flip sound gets played. The second flip sound does not get played because the first signal is already "busy". This easily occurs when playing on mobile or tablet because it is easier to flip fast when using these mentioned devices compared to desktop.
 
-**HTML, CSS and JavaScript Code Validation**
+### HTML, CSS and JavaScript Code Validation
 
 The HTML and CSS code file of this project was tested by direct input to [W3C Validator](https://validator.w3.org/) and no error was found. And the Javascript code file for this project was validated by direct input to [JSHint](https://jshint.com/) and no error/warning was found.
 
-**Mobile Friendly Test**
+### Mobile Friendly Test
 
 A mobile friendly test of this website was done using [search.google.com](https://search.google.com/test/mobile-friendly). The responsiveness was also done using websites such as [Am I Responsive](http://ami.responsivedesign.is/) and [Responsinator](http://www.responsinator.com/).
 
@@ -247,5 +273,5 @@ You can submit a pull request to the master branch and await approval. To do thi
 This project is for educational purposes only.
 
 
-[Back to top ↑](##Table-of-Content)
+[Back to top ↑](#GAME-OF-FLAGS)
 
