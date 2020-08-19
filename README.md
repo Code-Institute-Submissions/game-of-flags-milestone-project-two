@@ -195,6 +195,8 @@ The Game Of Flags application was tested across multiple browsers such as Google
 
 * If a player clicks on the cards too fast, only the first flip sound gets played. The second flip sound does not get played because the first signal is already "busy". This easily occurs when playing on mobile or tablet because it is easier to flip fast when using these mentioned devices compared to desktop.
 
+* If a player leaves the game idle for long, upon losing the losing sound does not get played. At the moment this issue is unresolved but I will look into it in the nearest future.
+
 ### HTML, CSS And JavaScript Code Validation
 
 The HTML and CSS code file of this project was tested by direct input to [W3C Validator](https://validator.w3.org/) and no error was found. And the Javascript code file for this project was validated by direct input to [JSHint](https://jshint.com/) and no error/warning was found.
