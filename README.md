@@ -19,7 +19,7 @@
 - [**Testing**](#Testing)
     - [Manual Test](#Manual-Test)
     - [Errors](#Errors)
-    - [HTML, CSS And JavaScript Code Validation](#HTML,-CSS-And-JavaScript-Code-Validation)
+    - [HTML, CSS And JavaScript Code Validation](#HTML-CSS-And-JavaScript-Code-Validation)
     - [Mobile Friendly Test](#Mobile-Friendly-Test)
 - [**Deployment**](#Deployment)
 - [**Credits**](#Credits)
