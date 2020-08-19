@@ -10,16 +10,16 @@
   - [Wireframes](#Wireframes)
 - [**Features**](#Features)
     - [Functionality](#Functionality)
-    - [Existing features](#Existing-features)
-    - [Features Left To Implement](#Future-Left-To-Implement)
+    - [Existing Features](#Existing-Features)
+    - [Features Left To Implement](#Features-Left-To-Implement)
 - [**Technologies Used**](#Technologies-Used)
     - [Languages Used](#Languages-Used)
-    - [Libraries and Frameworks](#Libraries-and-Frameworks)
+    - [Libraries And Frameworks](#Libraries-And-Frameworks)
     - [Tools Used](#Tools-Used)
 - [**Testing**](#Testing)
     - [Manual Test](#Manual-Test)
     - [Errors](#Errors)
-    - [HTML, CSS and JavaScript Code Validation](#HTML,-CSS-and-JavaScript-Code-Validation)
+    - [HTML, CSS And JavaScript Code Validation](#HTML,-CSS-And-JavaScript-Code-Validation)
     - [Mobile Friendly Test](#Mobile-Friendly-Test)
 - [**Deployment**](#Deployment)
 - [**Credits**](#Credits)
@@ -93,7 +93,7 @@ After playing the GAME OF FLAGS memory game more than 100 times and failing to 
 
  
 
-### Existing features
+### Existing Features
 
 * **Game Intro overlay**
 * **Mute and Unmute button** for background music
@@ -125,7 +125,7 @@ The use of CSS which stands for Cascading Style Sheet was also very paramount to
 
 Javascript, which is mostly been referred to as JS was used to create the main functional logic of this project.   
 
-### Libraries and framework
+### Libraries And Frameworks
 
 * [jQuery](https://jquery.com/)
 
@@ -195,7 +195,7 @@ The Game Of Flags application was tested across multiple browsers such as Google
 
 * If a player clicks on the cards too fast, only the first flip sound gets played. The second flip sound does not get played because the first signal is already "busy". This easily occurs when playing on mobile or tablet because it is easier to flip fast when using these mentioned devices compared to desktop.
 
-### HTML, CSS and JavaScript Code Validation
+### HTML, CSS And JavaScript Code Validation
 
 The HTML and CSS code file of this project was tested by direct input to [W3C Validator](https://validator.w3.org/) and no error was found. And the Javascript code file for this project was validated by direct input to [JSHint](https://jshint.com/) and no error/warning was found.
 
@@ -265,7 +265,7 @@ You can submit a pull request to the master branch and await approval. To do thi
 
 * The Gifs used on the results popup of this project were obtained from [gifer.com](https://gifer.com/en/gifs/thumbs-up).
 
-### Acknowledgement
+### Acknowledgements
 * I received inspiration for this project from a similar game app project titled [Juicy Fruit](https://github.com/sabinemm/fruit-game).
 
 * A special thanks to my mentor, Sandeep Aggarwal, for his feedback on my project's scope, design and functionality, and for hints on what information to include in my README.md.  
@@ -275,5 +275,5 @@ You can submit a pull request to the master branch and await approval. To do thi
 This project is for educational purposes only.
 
 
-[Back to top ↑](#GAME-OF-FLAGS)
+[Back to top ↑](#Table-Of-Content)
 
