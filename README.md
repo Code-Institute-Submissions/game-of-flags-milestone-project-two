@@ -256,6 +256,8 @@ You can submit a pull request to the master branch and await approval. To do thi
 
 * The shuffle function I used in my Javascript code was copied from [w3resource.com](https://www.w3resource.com/javascript-exercises/javascript-array-exercise-17.php).
 
+* I also learned about creating a memory card game while watching  [WEB DEV SIMPLIFIED](https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw)'s tutorial title ["How To Code a Card Matching Game"](https://www.youtube.com/watch?v=28VfzEiJgy4&t=753s) and [PortEXE](https://www.youtube.com/channel/UCjGQyJCSU_VVMTu5nigonqg) Javascript part of the [tutorial](https://www.youtube.com/watch?v=3uuQ3g92oPQ&t=2150s).
+
 ### Media
 * The images of all flags used in this project were obtained from [COUNTRYFLAGS.com](https://www.countryflags.com/en/image-overview/)
 
